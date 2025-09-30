@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo-corpo */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    background: url(./img/paisagem.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 24px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: #6a3983 1px 0 10px;
+}
+
+.clock {
+    display: flex;
+}
+
+.clock div {
+    margin: 5px;
+    position: relative;
+}
+.clock span {
+    width: 100px;
+    height: 80px;
+    background: slateblue;
+    font-size: 50px;
+    opacity: 0.8;
+    color: white;
+    display: flex;
+    align-items: center;  /*ajusta verticalmente*/
+    justify-content: center; /*ajusta horizontalmente*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);    
+}
+
+.clock .text {
+    height: 30px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase; /*deixa as letras maisculas*/
+    opacity: 0.8;
+    background: darkmagenta;
+}
+
+.clock #ampm {
+    bottom: 0;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background-color: darkblue;
+    position: absolute;
+}
